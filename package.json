@@ -1,0 +1,21 @@
+{
+  "name": "javascriptoo",
+  "version": "1.0.0",
+  "description": "Curso JavaScript Orientação a Objetos",
+  "type": "module",
+  "main": "User.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielcosta010/JavascriptOO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielcosta010/JavascriptOO/issues"
+  },
+  "homepage": "https://github.com/danielcosta010/JavascriptOO#readme"
+}
