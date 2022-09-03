@@ -1,13 +1,11 @@
 export default class User {
   #nome
-  #sobrenome
   #email
   #nasc
   #role
   #ativo
-  constructor(nome, sobrenome, email, nasc, role, ativo = true) {
+  constructor(nome, email, nasc, role, ativo = true) {
     this.#nome = nome;
-    this.#nome = sobrenome;
     this.#email = email;
     this.#nasc = nasc;
     this.#role = role || 'estudante';
@@ -15,10 +13,7 @@ export default class User {
   }
 
   get nome() {
-    return `${this.#nome} ${this.#sobrenome}`
-  }
-  get sobrenome() {
-    return this.#sobrenome
+    return this.#nome
   }
   get email() {
     return this.#email
@@ -37,10 +32,8 @@ export default class User {
     if(novoNome === '') {
       throw new Error('Formato inválido')
     }
-    let [nome, ...sobrenome] = novoNome.split(" ")
-    sobrenome = sobrenome.join(' ')
     this.#nome = nome;
-    this.#sobrenome = sobrenome;
+  
   }
 
 
